@@ -13,3 +13,7 @@ class QuizBuilder(QuestionInput, FileSaver):
 # ask the user if they want to add another question
             again = input("Do you want to add another question? (YES/NO): ").upper()
 # break the loop if they say no
+            if again != "YES":
+                print(f"\n{self.CYAN}🛠️ All done! You've built a fun and exciting quiz.🛠️{self.RESET}")
+                print(f"\n{self.CYAN} All your questions have been saved in {self.filename}.{self.RESET}")
+                break
