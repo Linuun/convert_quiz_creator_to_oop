@@ -5,6 +5,8 @@ class QuizBuilder(QuestionInput, FileSaver):
     def run(self):
 # use while loop
 # ask the user to input a question
+        while True:
+            questions_data = self.get_question()
 # save the question if input is valid
 # ask the user if they want to add another question
 # break the loop if they say no
