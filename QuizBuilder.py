@@ -15,5 +15,5 @@ class QuizBuilder(QuestionInput, FileSaver):
 # break the loop if they say no
             if again != "YES":
                 print(f"\n{self.CYAN}🛠️ All done! You've built a fun and exciting quiz.🛠️{self.RESET}")
-                print(f"\n{self.CYAN} All your questions have been saved in {self.filename}.{self.RESET}")
+                print(f"\n{self.CYAN} All your questions have been saved in {self.file_name}.{self.RESET}")
                 break
