@@ -15,3 +15,12 @@ class QuestionInput(QuizBase):
             print(f"{self.RED}Invalid Answer!🚫 Please enter A, B, C, or D {self.RESET}")
             return None
 # return all question data as a dictionary
+        else:
+            return {
+                "question": question,
+                "A": answer_a,
+                "B": answer_b,
+                "C": answer_c,
+                "D": answer_d,
+                "correct": correct_answer
+            }
