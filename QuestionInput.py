@@ -11,4 +11,7 @@ class QuestionInput(QuizBase):
         answer_d = input(f"{self.BLUE}D.) {self.RESET}")
         correct_answer = input("Enter the correct answer (A/B/C/D): ").upper()
 # validate the correct answer
+        if correct_answer not in ["A", "B", "C", "D"]:
+            print(f"{self.RED}Invalid Answer!🚫 Please enter A, B, C, or D {self.RESET}")
+            return None
 # return all question data as a dictionary
