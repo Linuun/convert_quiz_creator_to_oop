@@ -11,4 +11,5 @@ class QuizBuilder(QuestionInput, FileSaver):
             if questions_data:
                 self.save_question(questions_data)
 # ask the user if they want to add another question
+            again = input("Do you want to add another question? (YES/NO): ").upper()
 # break the loop if they say no
