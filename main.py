@@ -2,3 +2,4 @@
 from QuizBuilder import QuizBuilder
 quiz = QuizBuilder()
 # start running the quiz creation loop
+quiz.run()
