@@ -2,3 +2,4 @@
 from QuizGame import QuizGame
 quiz_game = QuizGame()
 # start running the quiz game loop
+quiz_game.run()
